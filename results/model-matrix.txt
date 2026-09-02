@@ -1,0 +1,37 @@
+model                      route             expected              actual                          margin uncertainty
+-----------------------------------------------------------------------------------------------------------------------
+ads4_periodic              compact_orbit     CTC_PROVED            SECTOR_CTC               -2.000000e+00 1.00e-10
+ads4_universal_cover       compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +1.000000e+00 1.00e-10
+alcubierre                 temporal_function NO_CTC_CERTIFIED      NO_CTC_CERTIFIED                     - -
+btz_rotating               compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +9.000000e+00 1.00e-10
+de_sitter_static           compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +2.500000e-01 1.00e-10
+flrw_exponential           temporal_function NO_CTC_CERTIFIED      NO_CTC_CERTIFIED                     - -
+flrw_flat                  temporal_function NO_CTC_CERTIFIED      NO_CTC_CERTIFIED                     - -
+godel                      compact_orbit     CTC_PROVED            SECTOR_CTC               -2.055335e+01 1.00e-10
+godel_critical             compact_orbit     UNRESOLVED            SECTOR_SPACELIKE         +1.315412e+01 1.00e-10
+godel_type                 compact_orbit     CTC_PROVED            SECTOR_CTC               -1.736478e+01 1.00e-10
+gott_two_strings           global_predicate  CTC_PROVED            CTC_PROVED               -1.438754e+01 -
+grant_space                deck_orbit        CTC_PROVED            SECTOR_CTC               -8.775451e+00 1.00e-10
+kerr                       compact_orbit     CTC_PROVED            SECTOR_CTC               -1.670000e+00 1.00e-10
+kerr_extremal              compact_orbit     CTC_PROVED            SECTOR_CTC               -2.750000e+00 1.00e-10
+kerr_newman                compact_orbit     CTC_PROVED            SECTOR_CTC               -1.772400e+00 1.00e-10
+krasnikov                  compact_orbit     UNRESOLVED            SECTOR_SPACELIKE         +1.000000e-02 1.00e-10
+minkowski                  temporal_function NO_CTC_CERTIFIED      NO_CTC_CERTIFIED                     - -
+minkowski_time_periodic    compact_orbit     CTC_PROVED            SECTOR_CTC               -1.000000e+00 1.00e-10
+misner                     compact_orbit     CTC_PROVED            SECTOR_CTC               -1.000000e+00 1.00e-10
+misner_covering            deck_orbit        CTC_PROVED            SECTOR_CTC               -1.086161e+00 1.00e-10
+morris_thorne              compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +4.000000e+00 1.00e-10
+ori_2005                   compact_orbit     CTC_PROVED            SECTOR_CTC               -1.000000e+00 1.00e-10
+ori_2007_core              compact_orbit     CTC_PROVED            SECTOR_CTC               -1.000000e+00 1.00e-10
+ori_2007_full              global_predicate  CTC_PROVED            NOT_APPLICABLE                       - -
+paired_warp                global_predicate  UNRESOLVED            NOT_APPLICABLE                       - -
+pseudo_reissner_nordstrom  compact_orbit     CTC_PROVED            SECTOR_CTC               -7.500000e-01 1.00e-10
+reissner_nordstrom         compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +2.500000e+01 1.00e-10
+schwarzschild              compact_orbit     NO_CTC_CERTIFIED      SECTOR_SPACELIKE         +2.500000e+01 1.00e-10
+spinning_cosmic_string     compact_orbit     CTC_PROVED            SECTOR_CTC               -1.536000e-01 1.00e-10
+taub_nut                   compact_orbit     CTC_PROVED            SECTOR_CTC               -6.923595e-01 1.01e-10
+time_shifted_wormhole      global_predicate  CTC_PROVED            CTC_PROVED               -1.000000e+00 -
+tipler_cylinder            global_predicate  CTC_PROVED            NOT_APPLICABLE                       - -
+van_stockum                compact_orbit     CTC_PROVED            SECTOR_CTC               -1.200000e+01 1.02e-10
+
+agreement 33/33 pass=True

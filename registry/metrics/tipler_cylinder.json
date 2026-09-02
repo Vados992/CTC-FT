@@ -1,0 +1,54 @@
+{
+  "coordinates": [],
+  "default_point": {},
+  "domain": [],
+  "domain_notes": "Tipler showed causality violation for the idealised, infinitely long, rapidly rotating cylinder. The exterior depends on matching parameters; CTC-FA v2.0 refuses to fabricate a single canonical local 4x4 tensor for it and uses van Stockum for the explicit local interior benchmark.",
+  "expected_scope": "REDUCED_MODEL",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "EXTERNAL_EXACT_SPEC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "unspecified",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "overreach_control"
+  },
+  "metric_components": null,
+  "metric_defined": false,
+  "model_id": "tipler_cylinder",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "Tipler 1974 matched van Stockum interior/exterior",
+    "implementation_status": "external",
+    "source_refs": [
+      "R7"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M10 Tipler rotating cylinder construction",
+  "topology": "infinite rotating cylinder; exterior matched to a rotating interior",
+  "version": "2.0"
+}

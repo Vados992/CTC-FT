@@ -1,0 +1,28 @@
+requirement_id,requirement,implementation,evidence,status
+REQ-001,Reject malformed registry records,src/ctcfa/model.py,tests/unit/test_conventions.py,PASS
+REQ-002,Load exactly 33 traceable model records,src/ctcfa/registry.py,tests/regression/test_regression.py,PASS
+REQ-003,Verify signature and inverse at evaluated points,src/ctcfa/validate.py,tests/unit/test_conventions.py,PASS
+REQ-004,Require topology-aware compact-orbit closure,src/ctcfa/causality.py,tests/controls/test_negative_controls.py,PASS
+REQ-005,Represent and verify deck transformations,src/ctcfa/model.py;src/ctcfa/quotient_ctc.py,tests/analytic/test_analytic_benchmarks.py,PASS
+REQ-006,Support scoped temporal-function certificates,src/ctcfa/causality.py,tests/controls/test_negative_controls.py,PASS
+REQ-007,Prevent negative-search overclaiming,src/ctcfa/status.py;src/ctcfa/report.py,tests/unit/test_status_and_gates.py,PASS
+REQ-008,Compute guarded energy-condition margins,src/ctcfa/energy.py,tests/regression/test_regression.py,PASS
+REQ-009,Separate horizon taxonomy from chronology conclusions,src/ctcfa/horizons.py,tests/controls/test_negative_controls.py,PASS
+REQ-010,Cross-check symbolic and numerical curvature,src/ctcfa/validate.py;src/ctcfa/numgeom.py,tests/unit/test_engines.py,PASS
+REQ-011,Recover preregistered causal boundaries,src/ctcfa/continuation.py,tests/blind/test_blind_benchmark.py,PASS
+REQ-012,Validate loop-search candidates independently,src/ctcfa/loops.py,tests/unit/test_engines.py,PASS
+REQ-013,Key QFT claims by explicit assumptions,src/ctcfa/qft.py;src/ctcfa/theorems.py,tests/regression/test_regression.py,PASS
+REQ-014,Keep ADM constraints separate from evolution claims,src/ctcfa/adm.py,tests/regression/test_regression.py,PASS
+REQ-015,Record provenance and source-tree digests,src/ctcfa/provenance.py,tests/regression/test_regression.py,PASS
+REQ-016,Limit meta-analysis to candidate precursors,src/ctcfa/meta.py,tests/regression/test_regression.py,PASS
+REQ-021,Validate theory and solution identity,src/ctcfa_v21_ref/model.py;src/ctcfa_v21_ref/pipeline.py,tests/v21/test_reference_core.py,PASS
+REQ-022,Reject off-shell and outside-EFT solutions,src/ctcfa_v21_ref/pipeline.py;src/ctcfa_v21_ref/adapters.py,tests/v21/test_reference_core.py,PASS
+REQ-023,Require a complete hyperbolic physical-mode bundle,src/ctcfa_v21_ref/model.py,tests/v21/test_reference_core.py,PASS
+REQ-024,Check topology for witnesses and temporal functions,src/ctcfa_v21_ref/topology.py;src/ctcfa_v21_ref/cones.py,tests/v21/test_reference_core.py,PASS
+REQ-025,Separate verified recovered and designed components,spec/implementation-state.json,docs/SCIENTIFIC_BOUNDARIES.md,PASS
+REQ-026,Forbid negative solution verdict promotion to theory claim,src/ctcfa_v21_ref/model.py;src/ctcfa_v21_ref/pipeline.py,tests/v21/test_reference_core.py,PASS
+DES-001,Implement rotating k-essence background and cones,planned adapter,none,SPECIFIED_NOT_IMPLEMENTED
+DES-002,Implement perturbative EdGB adapter,planned adapter,none,SPECIFIED_NOT_IMPLEMENTED
+DES-003,Integrate full 3+1 numerical evolution,external integration,none,NOT_ATTEMPTED
+DES-004,Validate observational inference on held-out data,planned pipeline,none,NOT_ATTEMPTED
+

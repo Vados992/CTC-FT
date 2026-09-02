@@ -1,0 +1,95 @@
+{
+  "coordinates": [
+    "t",
+    "x",
+    "rho",
+    "phi"
+  ],
+  "default_point": {
+    "D": 10.0,
+    "delta": 0.1,
+    "epsilon": 0.1,
+    "phi": 0.0,
+    "rho": 0.1,
+    "rho_max": 1.0,
+    "t": 20.0,
+    "x": 5.0
+  },
+  "domain": [
+    {
+      "expression": "rho",
+      "name": "radial",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "ds^2 = -dt^2 + 2(1-k) dt dx + k(2-k) dx^2 + drho^2 + rho^2 dphi^2. The (t,x) block has determinant exactly -1 for every k, so the chart is Lorentzian everywhere. A single tube is not itself a time machine. The smooth step is a REGULATOR CHOICE, not part of an exact solution, so no causal boundary may be derived from this entry (defect D-06).",
+  "expected_scope": "SECTOR",
+  "expected_status": "UNRESOLVED",
+  "expected_status_at_default_point": "UNRESOLVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "requires exotic stress-energy in standard GR",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "regulator_dependent": true,
+    "role": "shortcut_vs_loop_control"
+  },
+  "metric_components": {
+    "00": "-1",
+    "01": "(2 - delta)*(tanh((-rho + rho_max)/epsilon)/2 + 1/2)*(tanh((-D + epsilon + x)/epsilon)/2 + 1/2)*(tanh((-rho + t - x)/epsilon)/2 + 1/2)",
+    "11": "(-(2 - delta)*(tanh((-rho + rho_max)/epsilon)/2 + 1/2)*(tanh((-D + epsilon + x)/epsilon)/2 + 1/2)*(tanh((-rho + t - x)/epsilon)/2 + 1/2) + 1)*((2 - delta)*(tanh((-rho + rho_max)/epsilon)/2 + 1/2)*(tanh((-D + epsilon + x)/epsilon)/2 + 1/2)*(tanh((-rho + t - x)/epsilon)/2 + 1/2) + 1)",
+    "22": "1",
+    "33": "rho**2"
+  },
+  "metric_defined": true,
+  "model_id": "krasnikov",
+  "parameters": [
+    "delta",
+    "epsilon",
+    "rho_max",
+    "D"
+  ],
+  "provenance": {
+    "convention_note": "Everett-Roman smooth-step implementation of Krasnikov's tube",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R13"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M21 Krasnikov tube (Everett-Roman form)",
+  "topology": "phi periodic only; a CTC requires a suitable multi-tube or global arrangement",
+  "version": "2.0"
+}

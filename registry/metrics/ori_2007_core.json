@@ -1,0 +1,97 @@
+{
+  "coordinates": [
+    "v",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "P": 1.0,
+    "mu": 1.0,
+    "phi": 0.0,
+    "r": 1.0,
+    "theta": 1.0,
+    "v": 0.0
+  },
+  "domain": [
+    {
+      "expression": "r",
+      "name": "radial",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "sinh(theta)",
+      "name": "hyperbolic_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "ds^2 = (1 - 2 mu/r) dv^2 + 2 dv dr + r^2 (dtheta^2 + sinh^2(theta) dphi^2). The 2-surfaces are hyperbolic, not spherical. Periodic v loops become timelike for r < 2 mu; r = 2 mu is marginal. Benchmark for constructibility from regular initial data.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "v",
+      "index": 0,
+      "note": "",
+      "period": "P",
+      "requires_killing": true
+    }
+  ],
+  "kind": "QUOTIENT_GLOBAL",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": true,
+    "label": "vacuum core",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "exact_boundary": "r = 2 mu",
+    "role": "constructibility_benchmark"
+  },
+  "metric_components": {
+    "00": "-2*mu/r + 1",
+    "01": "1",
+    "22": "r**2",
+    "33": "r**2*sinh(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "ori_2007_core",
+  "parameters": [
+    "mu",
+    "P"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R15",
+      "R17"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M18 Ori 2007 periodic pseudo-Schwarzschild core",
+  "topology": "v periodically identified in the internal core",
+  "version": "2.0"
+}

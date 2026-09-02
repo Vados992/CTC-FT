@@ -1,0 +1,71 @@
+{
+  "coordinates": [
+    "t",
+    "x",
+    "y",
+    "z"
+  ],
+  "default_point": {
+    "t": 0.0,
+    "x": 1.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "domain": [],
+  "domain_notes": "Primary negative control for geometry, temporal-function certification and tensor residual tests.",
+  "expected_scope": "GLOBAL",
+  "expected_status": "NO_CTC_CERTIFIED",
+  "expected_status_at_default_point": "NO_CTC_CERTIFIED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": true,
+    "label": "vacuum",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "flat_covering": true,
+    "role": "negative_control"
+  },
+  "metric_components": {
+    "00": "-1",
+    "11": "1",
+    "22": "1",
+    "33": "1"
+  },
+  "metric_defined": true,
+  "model_id": "minkowski",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "signature (-,+,+,+)",
+    "derivation": "flat metric by definition",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R28"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": "t",
+  "theory": "GR",
+  "title": "M01 Minkowski spacetime",
+  "topology": "R^4, simply connected",
+  "version": "2.0"
+}

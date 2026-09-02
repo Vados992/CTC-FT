@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ctc-fa.tsinderhoz.dev/schemas/verdict.schema.json",
+    "title": "CTC-FA v2.0 scoped causal verdict",
+    "type": "object",
+    "required": ["model_id", "status", "scope", "margin", "method", "reason",
+                 "gates", "permitted_claim_level"],
+    "properties": {
+      "model_id": {"type": "string"},
+      "status": {"enum": ["CTC_PROVED", "CRITICAL", "NO_CTC_CERTIFIED",
+                          "UNRESOLVED"]},
+      "scope": {"enum": ["SECTOR", "REDUCED_MODEL", "DECLARED_DOMAIN", "GLOBAL"]},
+      "margin": {"type": ["number", "string"]},
+      "uncertainty": {"type": "number", "minimum": 0},
+      "method": {"type": "string"},
+      "reason": {"type": "string"},
+      "parameters": {"type": "object"},
+      "gates": {"type": "object",
+                "required": ["results", "highest_permitted_level"]},
+      "evidence": {"type": "object"},
+      "permitted_claim_level": {
+        "enum": ["L0_PARSED", "L1_FIELD_EQUATIONS", "L2_CTC_VERIFIED",
+                 "L3_BOUNDARY_CHARACTERISED", "L4_REGULARITY", "L5_ENERGY",
+                 "L6_CONSTRUCTIBILITY", "L7_STABILITY", "L8_SEMICLASSICAL"],
+        "description": "L9_QUANTUM_GRAVITY is deliberately absent: it is not emittable"}
+    },
+    "additionalProperties": false
+}

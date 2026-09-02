@@ -1,0 +1,48 @@
+{
+  "architect": "Vadym Tsinderhoz",
+  "compileall": "PASS",
+  "dependencies": {
+    "ctcfa": "2.1.0",
+    "jsonschema": "4.26.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.2",
+    "pytest": "9.1.1",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "document_id": "CTC-FA-2026-V2.1-COMPLETE-EN",
+  "generated_at_utc": "2026-09-02T09:59:45.664408+00:00",
+  "overall": "PASS",
+  "python": "3.12.13",
+  "registry": {
+    "n_models": 33,
+    "n_problems": 0,
+    "pass": true,
+    "problems": []
+  },
+  "schema_validation": {
+    "errors": [],
+    "status": "PASS"
+  },
+  "scientific_boundary": "Software verification is not physical validation of CTC existence.",
+  "source_tree": {
+    "files_hashed": 123,
+    "sha256": "96dbbf48fe900312cbcfd51fb41c9e76ad9be211d569b9661dee8894ff251321"
+  },
+  "tests": {
+    "collected": 149,
+    "execution": "PASS",
+    "expected": 149,
+    "inventory": [
+      "tests/analytic/test_analytic_benchmarks.py: 19",
+      "tests/blind/test_blind_benchmark.py: 19",
+      "tests/controls/test_negative_controls.py: 20",
+      "tests/regression/test_regression.py: 25",
+      "tests/unit/test_conventions.py: 14",
+      "tests/unit/test_engines.py: 13",
+      "tests/unit/test_status_and_gates.py: 8",
+      "tests/v21/test_reference_core.py: 31"
+    ]
+  },
+  "version": "2.1.0"
+}

@@ -1,0 +1,60 @@
+{
+  "coordinates": [],
+  "default_point": {
+    "delta_t": 12.0,
+    "t_ext": 10.0,
+    "t_wh": 1.0
+  },
+  "domain": [],
+  "domain_notes": "Explicitly labelled reduced criterion, used for software regression and parameter continuation. Requires: external travel time t_ext between mouths, wormhole traversal time t_wh, accumulated mouth time shift Delta t, all in one declared synchronisation.",
+  "expected_scope": "REDUCED_MODEL",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": true,
+  "global_margin_note": "margin = t_ext + t_wh - |Delta t|. Negative margin means the declared route closes to the past. This is an ARCHITECTURE-SPECIFIC reduced predicate under declared synchronisation and traversal assumptions, NOT a universal theorem for arbitrary dynamical wormholes. A production model must compute causal travel times from the full metric and the mouth worldlines.",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "COMPOSITE_GLOBAL",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "unspecified",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "reduced_predicate_benchmark"
+  },
+  "metric_components": null,
+  "metric_defined": false,
+  "model_id": "time_shifted_wormhole",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "Morris-Thorne-Yurtsever time-machine argument",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R5",
+      "R18",
+      "R19"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR (assumed traversable wormhole)",
+  "title": "M16 Time-shifted traversable wormhole (reduced route-closure model)",
+  "topology": "two mouths with a nontrivial spacetime identification",
+  "version": "2.0"
+}

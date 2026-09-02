@@ -1,0 +1,101 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "L": 1.0,
+    "phi": 0.0,
+    "r": 0.5,
+    "t": 0.0,
+    "theta": 1.5707963267948966
+  },
+  "domain": [
+    {
+      "expression": "L - r",
+      "name": "inside_horizon",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "r",
+      "name": "radial",
+      "note": "",
+      "strict": false
+    },
+    {
+      "expression": "sin(theta)",
+      "name": "polar_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "Positive-Lambda control. r = L is a cosmological horizon, not a chronology horizon; the static t is a temporal function only inside it, exactly as for Schwarzschild outside r = 2M.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "NO_CTC_CERTIFIED",
+  "expected_status_at_default_point": "NO_CTC_CERTIFIED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "3/L**2",
+    "T_defined": false,
+    "label": "vacuum with a positive cosmological constant",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "horizon": "r = L",
+    "role": "positive_lambda_control"
+  },
+  "metric_components": {
+    "00": "-1 + r**2/L**2",
+    "11": "1/(1 - r**2/L**2)",
+    "22": "r**2",
+    "33": "r**2*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "de_sitter_static",
+  "parameters": [
+    "L"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R27"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": "t",
+  "theory": "GR with Lambda = +3/L^2",
+  "title": "M25 de Sitter, static patch",
+  "topology": "static patch chart; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

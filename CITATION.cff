@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use CTC-FA, cite this repository and the underlying primary sources."
+title: "CTC-FA v2.1: Closed Timelike Curve Falsification Architecture"
+type: software
+version: 2.1.0
+date-released: 2026-09-02
+authors:
+  - family-names: Tsinderhoz
+    given-names: Vadym
+    affiliation: Independent Systems Architect
+repository-code: "https://github.com/Vados992/CTC-FT"
+url: "https://github.com/Vados992/CTC-FT"
+license: other
+abstract: >-
+  A traceable research-software architecture for falsification-oriented
+  analysis of closed-timelike-curve claims across registered spacetime models,
+  with explicit claim scopes, causal gates, tests, RTM and V&V controls.
+keywords:
+  - general relativity
+  - closed timelike curves
+  - causality
+  - chronology protection
+  - scientific computing
+  - falsification
+

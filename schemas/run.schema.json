@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ctc-fa.tsinderhoz.dev/schemas/run.schema.json",
+    "title": "CTC-FA v2.0 immutable run record",
+    "type": "object",
+    "required": ["run_id", "model_id", "method", "parameters", "result",
+                 "code_digest", "environment", "created_utc", "content_hash"],
+    "properties": {
+      "run_id": {"type": "string", "format": "uuid"},
+      "model_id": {"type": "string"},
+      "method": {"type": "string"},
+      "parameters": {"type": "object"},
+      "result": {"type": "object"},
+      "code_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+      "environment": {"type": "object",
+                      "required": ["python", "platform", "modules"]},
+      "created_utc": {"type": "string"},
+      "tolerances": {"type": "object"},
+      "source_refs": {"type": "array", "items": {"type": "string"}},
+      "review_state": {"enum": ["machine", "analyst_checked",
+                                "independently_replicated"]},
+      "supersedes": {"type": ["string", "null"]},
+      "content_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "additionalProperties": false
+}

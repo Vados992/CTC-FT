@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ctc-fa.tsinderhoz.dev/schemas/theorem.schema.json",
+    "title": "CTC-FA v2.0 theorem applicability record",
+    "type": "object",
+    "required": ["theorem", "applicability", "hypothesis_results",
+                 "permitted_label", "note"],
+    "properties": {
+      "theorem": {"type": "string"},
+      "applicability": {"enum": ["LICENSED", "HYPOTHESES_UNVERIFIED",
+                                  "NOT_APPLICABLE"]},
+      "hypothesis_results": {"type": "object",
+                             "additionalProperties": {"type": ["boolean", "null"]}},
+      "permitted_label": {"type": ["string", "null"]},
+      "note": {"type": "string"}
+    },
+    "additionalProperties": false
+}

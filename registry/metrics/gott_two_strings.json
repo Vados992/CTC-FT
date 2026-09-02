@@ -1,0 +1,62 @@
+{
+  "coordinates": [],
+  "default_point": {
+    "mu": 0.01,
+    "v": 0.999
+  },
+  "domain": [],
+  "domain_notes": "Tests global holonomy criteria and prevents local-metric overreach. mu here is G mu / c^2, so the deficit angle is 8 pi mu.",
+  "expected_scope": "REDUCED_MODEL",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": true,
+  "global_margin_note": "CTCs exist when gamma > 1/sin(4 pi mu), equivalently gamma v > cot(4 pi mu). Only the published global holonomy criterion is evaluated; no local metric is asserted.",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "COMPOSITE_GLOBAL",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "unspecified",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "equivalent_forms": [
+      "gamma > 1/sin(4 pi mu)",
+      "gamma v > cot(4 pi mu)"
+    ],
+    "role": "global_holonomy_benchmark"
+  },
+  "metric_components": null,
+  "metric_defined": false,
+  "model_id": "gott_two_strings",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "Gott 1991 exact two-string solution",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R8",
+      "R9"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR with distributional sources",
+  "title": "M14 Gott two-moving-cosmic-string construction",
+  "topology": "global holonomy around two non-intersecting infinite string defects",
+  "version": "2.0"
+}

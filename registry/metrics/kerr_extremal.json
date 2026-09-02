@@ -1,0 +1,82 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "M": 1.0,
+    "phi": 0.0,
+    "r": -0.5,
+    "t": 0.0,
+    "theta": 1.5707963267948966
+  },
+  "domain": [],
+  "domain_notes": "Extremal limit control: the CTC sector survives a -> M, so the sector is not an artefact of subextremality.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "vacuum",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "role": "limit_control"
+  },
+  "metric_components": {
+    "00": "2*M*r/(M**2*cos(theta)**2 + r**2) - 1",
+    "03": "-2*M**2*r*sin(theta)**2/(M**2*cos(theta)**2 + r**2)",
+    "11": "(M**2*cos(theta)**2 + r**2)/(M**2 - 2*M*r + r**2)",
+    "22": "M**2*cos(theta)**2 + r**2",
+    "33": "(2*M**3*r*sin(theta)**2/(M**2*cos(theta)**2 + r**2) + M**2 + r**2)*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "kerr_extremal",
+  "parameters": [
+    "M"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R3",
+      "R26"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M05b Extremal Kerr (a = M)",
+  "topology": "phi ~ phi + 2 pi; degenerate horizon at r = M",
+  "version": "2.0"
+}

@@ -1,0 +1,106 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "phi",
+    "z"
+  ],
+  "default_point": {
+    "m": 1.0,
+    "omega": 1.0,
+    "phi": 0.0,
+    "r": 2.0,
+    "t": 0.0,
+    "z": 0.0
+  },
+  "domain": [
+    {
+      "expression": "r",
+      "name": "radial",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "omega",
+      "name": "rotation",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "m",
+      "name": "scale",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "ds^2 = -[dt + H dphi]^2 + D^2 dphi^2 + dr^2 + dz^2 with H = (4 omega/m^2) sinh^2(m r/2), D = sinh(m r)/m. Circular CTCs exist for m^2 < 4 omega^2; the family is causal for m^2 >= 4 omega^2. Primary analytic phase-boundary benchmark.",
+  "expected_scope": "SECTOR",
+  "expected_status": "UNRESOLVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 2,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "source depends on the selected theory/matter model",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "critical_radius": "sinh^2(m r_c/2) = [4 omega^2/m^2 - 1]^-1",
+    "exact_boundary": "m^2 = 4 omega^2",
+    "normalised_sector_margin": "1 - (4 omega^2/m^2) tanh^2(m r/2)",
+    "role": "phase_boundary_benchmark"
+  },
+  "metric_components": {
+    "00": "-1",
+    "02": "-4*omega*sinh(m*r/2)**2/m**2",
+    "11": "1",
+    "22": "sinh(m*r)**2/m**2 - 16*omega**2*sinh(m*r/2)**4/m**4",
+    "33": "1"
+  },
+  "metric_defined": true,
+  "model_id": "godel_type",
+  "parameters": [
+    "omega",
+    "m"
+  ],
+  "provenance": {
+    "convention_note": "Rebou\u00e7as-Tiomno homogeneity classes",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R2",
+      "R6"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR or declared extension",
+  "title": "M07 Godel-type hyperbolic family (Rebou\u00e7as-Tiomno)",
+  "topology": "R^3 x S^1 in the benchmark chart; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

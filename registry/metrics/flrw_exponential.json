@@ -1,0 +1,73 @@
+{
+  "coordinates": [
+    "t",
+    "x",
+    "y",
+    "z"
+  ],
+  "default_point": {
+    "H": 1.0,
+    "t": 0.0,
+    "x": 1.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "domain": [],
+  "domain_notes": "Numerically evaluable companion to flrw_flat.",
+  "expected_scope": "GLOBAL",
+  "expected_status": "NO_CTC_CERTIFIED",
+  "expected_status_at_default_point": "NO_CTC_CERTIFIED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "3*H**2",
+    "T_defined": false,
+    "label": "de Sitter (Lambda = 3 H^2)",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "role": "cosmological_control"
+  },
+  "metric_components": {
+    "00": "-1",
+    "11": "exp(2*H*t)",
+    "22": "exp(2*H*t)",
+    "33": "exp(2*H*t)"
+  },
+  "metric_defined": true,
+  "model_id": "flrw_exponential",
+  "parameters": [
+    "H"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R27"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": "t",
+  "theory": "GR",
+  "title": "M02b Spatially flat FLRW, a(t)=exp(H t)",
+  "topology": "R x R^3 (flat slicing chart of de Sitter)",
+  "version": "2.0"
+}

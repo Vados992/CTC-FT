@@ -1,0 +1,54 @@
+{
+  "coordinates": [],
+  "default_point": {},
+  "domain": [],
+  "domain_notes": "Closed timelike curves form after evolution from a regular spacelike initial hypersurface in the published model, with WEC, DEC and SEC satisfied. Highest-value target for a full ADM/evolution reproduction; the matching and initial data are a separate implementation.",
+  "expected_scope": "REDUCED_MODEL",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "EXTERNAL_EXACT_SPEC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "unspecified",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "constructibility_target"
+  },
+  "metric_components": null,
+  "metric_defined": false,
+  "model_id": "ori_2007_full",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "Ori 2007 composite vacuum/dust asymptotically flat model",
+    "implementation_status": "external",
+    "source_refs": [
+      "R15"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M19 Ori 2007 full composite model",
+  "topology": "compact vacuum core + positive-density dust envelope + asymptotically flat vacuum exterior",
+  "version": "2.0"
+}

@@ -1,0 +1,92 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "M": 1.0,
+    "ell": 1.0,
+    "phi": 0.0,
+    "r": 3.0,
+    "t": 0.0,
+    "theta": 0.1
+  },
+  "domain": [
+    {
+      "expression": "sin(theta)",
+      "name": "polar_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "Azimuthal CTC sectors occur where -f (2 l cos theta)^2 + (r^2 + l^2) sin^2 theta < 0, i.e. near the axis in the region f > 0. The local phi-loop detector does NOT resolve the global identification choices; the verdict is deliberately kept at SECTOR scope.",
+  "expected_scope": "SECTOR",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "vacuum",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "role": "gravitomagnetic_pathology",
+    "sector_boundary": "g_phi_phi = 0"
+  },
+  "metric_components": {
+    "00": "-(-2*M*r - ell**2 + r**2)/(ell**2 + r**2)",
+    "03": "-2*ell*(-2*M*r - ell**2 + r**2)*cos(theta)/(ell**2 + r**2)",
+    "11": "(ell**2 + r**2)/(-2*M*r - ell**2 + r**2)",
+    "22": "ell**2 + r**2",
+    "33": "-4*ell**2*(-2*M*r - ell**2 + r**2)*cos(theta)**2/(ell**2 + r**2) + (ell**2 + r**2)*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "taub_nut",
+  "parameters": [
+    "M",
+    "ell"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R28"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M11 Lorentzian Taub-NUT",
+  "topology": "phi periodic; the global time identification is treatment-dependent (Misner string / Misner identification)",
+  "version": "2.0"
+}

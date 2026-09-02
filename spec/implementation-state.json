@@ -1,0 +1,61 @@
+{
+  "document_id": "CTC-FA-2026-V2.1-COMPLETE-EN",
+  "version": "2.1.0",
+  "as_of": "2026-09-02",
+  "architect": "Vadym Tsinderhoz",
+  "state_definitions": {
+    "VERIFIED": "Implemented and exercised by the named tests in this repository.",
+    "VERIFIED_STRUCTURAL": "Schema and registry structure passed; no physical existence claim follows.",
+    "RECOVERED_AND_RERUN": "Recovered from the supplied PDF listing, repaired for extraction damage, and rerun.",
+    "SPECIFIED_NOT_IMPLEMENTED": "The contract or design exists but the executable solver is absent.",
+    "NOT_ATTEMPTED": "The integration or external validation has not been run."
+  },
+  "components": [
+    {
+      "id": "baseline-v20-runtime",
+      "state": "RECOVERED_AND_RERUN",
+      "evidence": "118/118 baseline tests passed; 33-model registry audit passed"
+    },
+    {
+      "id": "v21-reference-core",
+      "state": "VERIFIED",
+      "evidence": "31/31 T0-T3 tests passed"
+    },
+    {
+      "id": "model-registry-33",
+      "state": "VERIFIED_STRUCTURAL",
+      "evidence": "33 records, zero structural-audit problems, JSON Schema validation"
+    },
+    {
+      "id": "constant-background-kessence-control",
+      "state": "VERIFIED",
+      "evidence": "analytic characteristic and sound-speed tests"
+    },
+    {
+      "id": "rotating-kessence-adapter",
+      "state": "SPECIFIED_NOT_IMPLEMENTED",
+      "evidence": "no background solver or complete rotating characteristic bundle"
+    },
+    {
+      "id": "perturbative-edgb-adapter",
+      "state": "SPECIFIED_NOT_IMPLEMENTED",
+      "evidence": "no executable field-equation or principal-symbol adapter"
+    },
+    {
+      "id": "quartic-horndeski-generic-characteristics",
+      "state": "SPECIFIED_NOT_IMPLEMENTED",
+      "evidence": "implicit characteristic interface is not implemented by the reference core"
+    },
+    {
+      "id": "full-3plus1-evolution",
+      "state": "NOT_ATTEMPTED",
+      "evidence": "external numerical-relativity integration required"
+    },
+    {
+      "id": "observational-ctc-inference",
+      "state": "NOT_ATTEMPTED",
+      "evidence": "no observational pipeline or CTC observation"
+    }
+  ]
+}
+

@@ -1,0 +1,99 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "M": 1.0,
+    "Q": -0.2,
+    "a": 0.8,
+    "phi": 0.0,
+    "r": -0.5,
+    "t": 0.0,
+    "theta": 1.5707963267948966
+  },
+  "domain": [
+    {
+      "expression": "a**2*cos(theta)**2 + r**2",
+      "name": "nondegenerate_Sigma",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "sin(theta)",
+      "name": "polar_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "Tests multi-parameter continuation and the separation of charge, rotation and causal pathology. Horizons exist when M^2 >= a^2 + Q^2.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "electrovacuum",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "multiparameter_benchmark"
+  },
+  "metric_components": {
+    "00": "(2*M*r - Q**2)/(a**2*cos(theta)**2 + r**2) - 1",
+    "03": "-a*(2*M*r - Q**2)*sin(theta)**2/(a**2*cos(theta)**2 + r**2)",
+    "11": "(a**2*cos(theta)**2 + r**2)/(-2*M*r + Q**2 + a**2 + r**2)",
+    "22": "a**2*cos(theta)**2 + r**2",
+    "33": "(a**2*(2*M*r - Q**2)*sin(theta)**2/(a**2*cos(theta)**2 + r**2) + a**2 + r**2)*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "kerr_newman",
+  "parameters": [
+    "M",
+    "a",
+    "Q"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R28"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "Einstein-Maxwell",
+  "title": "M06 Kerr-Newman",
+  "topology": "maximal analytic extension; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

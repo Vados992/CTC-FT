@@ -1,0 +1,105 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "M": 1.0,
+    "a": 0.8,
+    "phi": 0.0,
+    "r": -0.5,
+    "t": 0.0,
+    "theta": 1.5707963267948966
+  },
+  "domain": [
+    {
+      "expression": "a**2*cos(theta)**2 + r**2",
+      "name": "nondegenerate_Sigma",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "(-2*M*r + a**2 + r**2)**2",
+      "name": "off_horizon",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "sin(theta)",
+      "name": "polar_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "In part of the analytically extended r < 0 region g_phi_phi < 0, so constant-(t,r,theta) azimuthal loops are timelike. Mathematical existence; operational accessibility and stability of that region are separate claims.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "CTC_PROVED",
+  "expected_status_at_default_point": "CTC_PROVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "vacuum away from the ring singularity",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "ctc_region": "r < 0 near theta = pi/2",
+    "role": "rotation_benchmark",
+    "sector_boundary": "g_phi_phi = 0"
+  },
+  "metric_components": {
+    "00": "2*M*r/(a**2*cos(theta)**2 + r**2) - 1",
+    "03": "-2*M*a*r*sin(theta)**2/(a**2*cos(theta)**2 + r**2)",
+    "11": "(a**2*cos(theta)**2 + r**2)/(-2*M*r + a**2 + r**2)",
+    "22": "a**2*cos(theta)**2 + r**2",
+    "33": "(2*M*a**2*r*sin(theta)**2/(a**2*cos(theta)**2 + r**2) + a**2 + r**2)*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "kerr",
+  "parameters": [
+    "M",
+    "a"
+  ],
+  "provenance": {
+    "convention_note": "g_t_phi = -2 M a r sin^2(theta)/Sigma in (-,+,+,+); the v1.0 registry table printed the opposite sign (defect D-01)",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R3",
+      "R26"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR",
+  "title": "M05 Kerr (Boyer-Lindquist)",
+  "topology": "maximal analytic extension including r < 0; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

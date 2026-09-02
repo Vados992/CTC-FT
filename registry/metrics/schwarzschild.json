@@ -1,0 +1,96 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "theta",
+    "phi"
+  ],
+  "default_point": {
+    "M": 1.0,
+    "phi": 0.0,
+    "r": 5.0,
+    "t": 0.0,
+    "theta": 1.5707963267948966
+  },
+  "domain": [
+    {
+      "expression": "-2*M + r",
+      "name": "exterior",
+      "note": "the Schwarzschild t coordinate is a temporal function only outside the horizon",
+      "strict": true
+    },
+    {
+      "expression": "sin(theta)",
+      "name": "polar_regular",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "r = 2M is an event horizon, NOT a chronology horizon. Separates horizon detection from causality violation.",
+  "expected_scope": "DECLARED_DOMAIN",
+  "expected_status": "NO_CTC_CERTIFIED",
+  "expected_status_at_default_point": "NO_CTC_CERTIFIED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 3,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": true,
+    "label": "vacuum",
+    "note": "",
+    "vacuum": true
+  },
+  "metadata": {
+    "horizon": "r = 2M",
+    "kretschmann": "48 M^2 / r^6",
+    "role": "negative_control"
+  },
+  "metric_components": {
+    "00": "2*M/r - 1",
+    "11": "1/(-2*M/r + 1)",
+    "22": "r**2",
+    "33": "r**2*sin(theta)**2"
+  },
+  "metric_defined": true,
+  "model_id": "schwarzschild",
+  "parameters": [
+    "M"
+  ],
+  "provenance": {
+    "convention_note": "standard exterior chart",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R28"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": "t",
+  "theory": "GR",
+  "title": "M03 Schwarzschild",
+  "topology": "R^2 x S^2 exterior chart; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

@@ -1,0 +1,55 @@
+{
+  "coordinates": [],
+  "default_point": {},
+  "domain": [],
+  "domain_notes": "Deliberate UNRESOLVED placeholder that prohibits unsupported universality claims. A CTC verdict requires a specific published construction to be instantiated with its route geometry, velocities, synchronisation and matching data, and then validated.",
+  "expected_scope": "SECTOR",
+  "expected_status": "UNRESOLVED",
+  "expected_status_at_default_point": "UNRESOLVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "COMPOSITE_GLOBAL",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "unspecified",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "unresolved_placeholder"
+  },
+  "metric_components": null,
+  "metric_defined": false,
+  "model_id": "paired_warp",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "placeholder",
+    "source_refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "construction-specific",
+  "title": "M22 Paired warp / superluminal causal-loop family",
+  "topology": "multi-segment engineered spacetime with global route closure",
+  "version": "2.0"
+}

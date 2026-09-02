@@ -1,0 +1,95 @@
+{
+  "coordinates": [
+    "t",
+    "r",
+    "phi",
+    "z"
+  ],
+  "default_point": {
+    "omega": 1.0,
+    "phi": 0.0,
+    "r": 2.0,
+    "t": 0.0,
+    "z": 0.0
+  },
+  "domain": [
+    {
+      "expression": "r",
+      "name": "radial",
+      "note": "",
+      "strict": true
+    },
+    {
+      "expression": "omega",
+      "name": "rotation",
+      "note": "",
+      "strict": true
+    }
+  ],
+  "domain_notes": "Exactly on the causal phase boundary: the critical radius diverges and g_phi_phi = sinh^2(2 omega r)/(4 omega^2) * (1 - tanh^2) > 0 for all finite r. The azimuthal sector is spacelike everywhere, but this is a SECTOR result only.",
+  "expected_scope": "SECTOR",
+  "expected_status": "UNRESOLVED",
+  "expected_status_at_default_point": "UNRESOLVED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [
+    {
+      "coordinate": "phi",
+      "index": 2,
+      "note": "",
+      "period": "2*pi",
+      "requires_killing": true
+    }
+  ],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "model-dependent",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "role": "marginal_family_control"
+  },
+  "metric_components": {
+    "00": "-1",
+    "02": "-sinh(omega*r)**2/omega",
+    "11": "1",
+    "22": "sinh(omega*r)**2/omega**2",
+    "33": "1"
+  },
+  "metric_defined": true,
+  "model_id": "godel_critical",
+  "parameters": [
+    "omega"
+  ],
+  "provenance": {
+    "convention_note": "",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R2",
+      "R6"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": null,
+  "theory": "GR or extension",
+  "title": "M26 Critical Godel-type member (m^2 = 4 omega^2)",
+  "topology": "R^3 x S^1 in the benchmark chart; phi ~ phi + 2 pi",
+  "version": "2.0"
+}

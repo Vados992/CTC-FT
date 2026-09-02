@@ -1,0 +1,170 @@
+{
+  "architect": "Vadym Tsinderhoz",
+  "artifact_digest": null,
+  "date": "2026-08-31",
+  "document_id": "CTC-FA-2026-V2.1-COMPLETE-EN",
+  "environment": {
+    "implementation": "CPython",
+    "modules": {
+      "matplotlib": "absent",
+      "mpmath": "1.3.0",
+      "numpy": "2.5.2",
+      "reportlab": "absent",
+      "scipy": "1.18.1",
+      "sympy": "1.14.0"
+    },
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "python": "3.12.13"
+  },
+  "files": [
+    {
+      "bytes": "1476",
+      "path": "__init__.py",
+      "sha256": "0ed4c5e96b2b7511b50782da8e9d0c30df36a1d7c7cb903ffc0f84ee6a4f63dd"
+    },
+    {
+      "bytes": "12035",
+      "path": "adm.py",
+      "sha256": "ee2213ea706a4eac838c6ab58c13cde8751679470eb8b1c7fc2945cae016d380"
+    },
+    {
+      "bytes": "20924",
+      "path": "causality.py",
+      "sha256": "bdb2c0348cec2e2fc53a469443f9f46a485c0b458bc2da8cfac0d4c3b247760c"
+    },
+    {
+      "bytes": "10736",
+      "path": "cli.py",
+      "sha256": "d0753ab72edda7c2794903fc94e94d7ae6f85712fc3d4d387e2759de00b33c37"
+    },
+    {
+      "bytes": "19746",
+      "path": "continuation.py",
+      "sha256": "7e1791989c8226b501f92137f754b46f685113890c8f130038274832fa833db8"
+    },
+    {
+      "bytes": "27567",
+      "path": "energy.py",
+      "sha256": "737b522c83b7a3f38e3e9bd1fd3c2f3c867db0004b4eb443a0cea1aa9b78bfbe"
+    },
+    {
+      "bytes": "11709",
+      "path": "geodesics.py",
+      "sha256": "b363c92bb55e39cd4e1c5942b81679b4d0e107759800a657ba0c9c355ea6e0a1"
+    },
+    {
+      "bytes": "11198",
+      "path": "horizons.py",
+      "sha256": "bd52a806f16288e65578b1991d6c33c3a6c85b442a7992d63efdb40b9b28e332"
+    },
+    {
+      "bytes": "15571",
+      "path": "interval.py",
+      "sha256": "cdff879ba660fe9479906308bc9a19a9efbcba11edec18a3a0ee55e13a05ecf0"
+    },
+    {
+      "bytes": "16997",
+      "path": "loops.py",
+      "sha256": "592db70ec64c00ba4be7260224564de1b4d94ee7a51630e64d8858a931cf0fb0"
+    },
+    {
+      "bytes": "10206",
+      "path": "meta.py",
+      "sha256": "ce4a2f72a85d648712be4909e16f09cca2d84579b3f69f1f0bcc8542092e5714"
+    },
+    {
+      "bytes": "60926",
+      "path": "metrics.py",
+      "sha256": "49e07a85c090881181ef53a5bdd4a84f47fefc0a86e2849e5d867c47fcbda863"
+    },
+    {
+      "bytes": "23540",
+      "path": "model.py",
+      "sha256": "e32822f1540dd5a43bce6fa523dd9c3584c18cd8282b4c6c0dd34d09f09c1dc7"
+    },
+    {
+      "bytes": "10001",
+      "path": "numerics.py",
+      "sha256": "e356b16175c253baf0f696e38ebb96b5fa7fd6bef4e8045207840adc0d1825ba"
+    },
+    {
+      "bytes": "8793",
+      "path": "numgeom.py",
+      "sha256": "2104ad1f025f8e9eae026e992d634a4803f80b95aecdb78f0310259c2f762f05"
+    },
+    {
+      "bytes": "13051",
+      "path": "optimize.py",
+      "sha256": "644bbe7619a526b7182853af45f2a1c7af9bed2c400360198ec152ba0aec8f66"
+    },
+    {
+      "bytes": "7405",
+      "path": "orientation.py",
+      "sha256": "272072dd3f2954f262469505ba3062ffa3bf0cee1c75e159655c56f58ada1682"
+    },
+    {
+      "bytes": "8865",
+      "path": "perturbation.py",
+      "sha256": "a5ce7eb8ee520d4f62f72132d3fd2af1dda2230844bc66f4c234d41b8efc12f8"
+    },
+    {
+      "bytes": "10468",
+      "path": "provenance.py",
+      "sha256": "fa04312121f8b505b6def6274e167c4615b5756e2e3522296ba7dc49472a810b"
+    },
+    {
+      "bytes": "13778",
+      "path": "qft.py",
+      "sha256": "566bc5c3aa6b92f20e6d9aec5bc4db5936359ac2717d22ccdfd4345b4f8b0f6d"
+    },
+    {
+      "bytes": "15635",
+      "path": "quotient_ctc.py",
+      "sha256": "6f87c010622cab7837b90f0a57bd0c3891cb8fe638f82985d70e3231fd0f0be5"
+    },
+    {
+      "bytes": "4234",
+      "path": "registry.py",
+      "sha256": "10f2b730ac69eae48dc36fe42d68dd0a26ce8b96d47fc5434930799325772812"
+    },
+    {
+      "bytes": "11323",
+      "path": "report.py",
+      "sha256": "227d77d0544cb776b308c079038a6915aa502890d0bfc9daa5f1b1ca6e24ba07"
+    },
+    {
+      "bytes": "15817",
+      "path": "status.py",
+      "sha256": "fd612d09bca47f4c796e70f42f1f6f15651e582472ec951fb5703e5fdbf7edea"
+    },
+    {
+      "bytes": "12708",
+      "path": "symbolic.py",
+      "sha256": "d06ead70d8821a71ea8065afab9b95e77171dd50e6819929c7f7f5733bef350b"
+    },
+    {
+      "bytes": "8553",
+      "path": "symmetry.py",
+      "sha256": "3042c86b7a9cff0a0a876032c94a820291326f2d3c0fb339145ba564c53185d6"
+    },
+    {
+      "bytes": "14758",
+      "path": "theorems.py",
+      "sha256": "7c267bb084c14cf83deb0f9ddace3808b8d810ab24b9d55170ff68041ea1888c"
+    },
+    {
+      "bytes": "15566",
+      "path": "topology.py",
+      "sha256": "0a4924ea848ba0eaf682422e05357d8467d7396035b0d127f571aa98c5adb863"
+    },
+    {
+      "bytes": "9443",
+      "path": "validate.py",
+      "sha256": "239f91b5b95ffc0c2a2e71f50341eff1be8d86c38337ccf532d6f7de58f1eb46"
+    }
+  ],
+  "note": "pass 1: source digest computed with the artifact hash field still blank",
+  "pass1_digest": null,
+  "source_digest": "08e3bdaf27703770749526050dad0941d0ee4d299cdb0eb42ecc3f6d553d5859",
+  "version": "2.1.0"
+}

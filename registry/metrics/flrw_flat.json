@@ -1,0 +1,66 @@
+{
+  "coordinates": [
+    "t",
+    "x",
+    "y",
+    "z"
+  ],
+  "default_point": {},
+  "domain": [],
+  "domain_notes": "Cosmic time t satisfies g^tt = -1 for ANY a(t) > 0, so the temporal-function certificate is exact and scale-factor independent. Tests that expansion and curvature alone do not trigger a false CTC classification.",
+  "expected_scope": "GLOBAL",
+  "expected_status": "NO_CTC_CERTIFIED",
+  "expected_status_at_default_point": "NO_CTC_CERTIFIED",
+  "global_margin": false,
+  "global_margin_note": "",
+  "global_margin_scope": "REDUCED_MODEL",
+  "identifications": [],
+  "kind": "LOCAL_METRIC",
+  "matter": {
+    "Lambda": "0",
+    "T_defined": false,
+    "label": "model-dependent cosmological matter",
+    "note": "",
+    "vacuum": false
+  },
+  "metadata": {
+    "numeric_evaluable": false,
+    "role": "cosmological_control"
+  },
+  "metric_components": {
+    "00": "-1",
+    "11": "a(t)**2",
+    "22": "a(t)**2",
+    "33": "a(t)**2"
+  },
+  "metric_defined": true,
+  "model_id": "flrw_flat",
+  "parameters": [],
+  "provenance": {
+    "convention_note": "signature (-,+,+,+)",
+    "derivation": "",
+    "external_spec": "",
+    "implementation_status": "implemented",
+    "source_refs": [
+      "R26",
+      "R27"
+    ]
+  },
+  "quotient": {
+    "acts_freely": null,
+    "generators": [],
+    "label": "trivial",
+    "note": ""
+  },
+  "signature": [
+    1,
+    0,
+    3
+  ],
+  "signature_convention": "(-,+,+,+)",
+  "temporal_function": "t",
+  "theory": "GR",
+  "title": "M02 Spatially flat FLRW (general scale factor)",
+  "topology": "R x R^3 in the baseline chart",
+  "version": "2.0"
+}
